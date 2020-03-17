@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./header/header";
 import MoveList from "./movie-list/movie-list";
 
+
 import { data } from "./data";
 
 class App extends Component {
@@ -12,11 +13,11 @@ class App extends Component {
   };
 
   render() {
-    console.log("App: render");
     return (
       <div className="App">
         <Header headerMessage={this.state.headerMessage} />
-        <MoveList movieData={this.state.movieData} />>
+        {this.props.children}
+        <MoveList movieData={this.state.movieData} />
       </div>
     );
   }
