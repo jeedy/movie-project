@@ -86,10 +86,12 @@ const StyledDiv = styled.div`
 `;
 
 class MovieList extends Component {
-    domConfettiRefs = this.props.movieData.map( () => React.createRef());
+    domConfettiRefs = this.props.movieData.map( () => {
+      return React.createRef();
+    });
 
     showParadise = idx => {
-        confetti(this.domConfettiRefs[idx].current);
+      confetti(this.domConfettiRefs[idx].current);
     };
 
     render() {
