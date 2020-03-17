@@ -3,12 +3,18 @@ import styled from 'styled-components';
 import Header from '../header/header';
 import "../App.css";
 
+const StyledDiv = styled.div`
+    h2 {
+        color: white;
+    }
+`;
+
 const IndexAjax = () => {
     return (
-        <div className="App">
+        <StyledDiv className="App">
             <Header headerMessage={'Ajax sample'} />
             <h2>Ajax Sample</h2>
-        </div>
+        </StyledDiv>
     );
 }
 

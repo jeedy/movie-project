@@ -16,7 +16,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header headerMessage={this.state.headerMessage} />
-        {this.props.children}
         <MoveList movieData={this.state.movieData} />
       </div>
     );
