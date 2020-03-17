@@ -1,3 +1,19 @@
+# React-MOVIE-PROJECT
+
+## 서버 start
+```sh
+$ npm start
+```
+
+## build
+```sh
+$ npm run build
+```
+
+## debugging
+1. "Debugger for Chrome" vscode plugin 설치
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
