@@ -6,7 +6,7 @@ import MoveList from "./movie-list/movie-list";
 
 import { data } from "./data";
 
-class App extends Component {
+class Home extends Component {
   state = {
     headerMessage: "영화 소개 프로젝트",
     movieData: data
@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   render() {
-    console.log("APP");
+    console.log("Home rendering..");
     return (
       <div className="App">
         <Header headerMessage={this.state.headerMessage} />
@@ -28,4 +28,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;
