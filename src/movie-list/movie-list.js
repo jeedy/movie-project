@@ -86,10 +86,17 @@ const StyledDiv = styled.div`
 `;
 
 class MovieList extends Component {
-    domConfettiRefs = this.props.movieData.map( () => React.createRef());
+    constructor(props){
+      super(props);
+      props.onChageHeaderMessage("무비 리스트");
+    }
+
+    domConfettiRefs = this.props.movieData.map( () => {
+      return React.createRef();
+    });
 
     showParadise = idx => {
-        confetti(this.domConfettiRefs[idx].current);
+      confetti(this.domConfettiRefs[idx].current);
     };
 
     render() {

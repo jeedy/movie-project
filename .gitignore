@@ -42,6 +42,9 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
+# production
+/build
+
 # Dependency directories
 node_modules/
 jspm_packages/
@@ -132,6 +135,4 @@ sketch
 # Ignore all local history of files
 .history
 
-
-## commit test
 # End of https://www.gitignore.io/api/node,react,visualstudiocode
