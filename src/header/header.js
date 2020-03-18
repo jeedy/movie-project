@@ -48,18 +48,28 @@ const MenuItem = ({active, children, to}) => (
   </Link>
 );
 
-class Header extends Component {
-    render() {
-        return (
-          <HeaderDiv>
-            <span>{this.props.headerMessage}</span>
-            <div className="menu">
-              <MenuItem to={'/'}>Movie</MenuItem>
-              <MenuItem to={'/indexAjax'}>AJAX API</MenuItem>
-            </div>
-          </HeaderDiv>
-        );
-    }
+const Header = (props, context) => {
+  return (
+    <HeaderDiv>
+      <span>{props.headerMessage}</span>
+      <div className="menu">
+        <MenuItem to={'/'}>Movie</MenuItem>
+        <MenuItem to={'/indexAjax'}>AJAX API</MenuItem>
+      </div>
+    </HeaderDiv>);
 }
+/*class Header extends Component {
+  render() {
+    return (
+      <HeaderDiv>
+        <span>{this.props.headerMessage}</span>
+        <div className="menu">
+          <MenuItem to={'/'}>Movie</MenuItem>
+          <MenuItem to={'/indexAjax'}>AJAX API</MenuItem>
+        </div>
+      </HeaderDiv>
+    );
+  }
+}*/
 
 export default Header;

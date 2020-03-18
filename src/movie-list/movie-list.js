@@ -86,6 +86,11 @@ const StyledDiv = styled.div`
 `;
 
 class MovieList extends Component {
+    constructor(props){
+      super(props);
+      props.onChageHeaderMessage("무비 리스트");
+    }
+
     domConfettiRefs = this.props.movieData.map( () => {
       return React.createRef();
     });

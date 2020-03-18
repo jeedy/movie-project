@@ -1,6 +1,6 @@
 # React-MOVIE-PROJECT
 
-## 서버 start
+## local 서버 start
 ```sh
 $ npm start
 ```
@@ -9,6 +9,13 @@ $ npm start
 ```sh
 $ npm run build
 ```
+
+## node server(express) start 운영시
+```sh
+$ node server
+```
+
+
 
 ## debugging
 1. "Debugger for Chrome" vscode plugin 설치

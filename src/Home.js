@@ -12,11 +12,17 @@ class App extends Component {
     movieData: data
   };
 
+  chageHeaderMessage = text => {
+    console.log(text);
+    this.setState({headerMessage: text});
+  }
+
   render() {
+    console.log("APP");
     return (
       <div className="App">
         <Header headerMessage={this.state.headerMessage} />
-        <MoveList movieData={this.state.movieData} />
+        <MoveList movieData={this.state.movieData} onChageHeaderMessage={this.chageHeaderMessage} />
       </div>
     );
   }
