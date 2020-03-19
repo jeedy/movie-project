@@ -42,19 +42,22 @@ const HeaderDiv = styled.div`
   }
 `;
 
-const MenuItem = ({active, children, to}) => (
-  <Link to={to} className="menu-item">
-    {children}
-  </Link>
-);
+const MenuItem = ({children, to}) => {
+  return (
+    <Link to={to} className="menu-item">
+      {children}
+    </Link>
+  );
+}
 
-const Header = (props, context) => {
+const Header = (props) => {
   return (
     <HeaderDiv>
       <span>{props.headerMessage}</span>
       <div className="menu">
         <MenuItem to={'/'}>Movie</MenuItem>
         <MenuItem to={'/indexAjax'}>AJAX API</MenuItem>
+        <MenuItem to={'/indexAjax/foo'}>AJAX API` foo</MenuItem>
       </div>
     </HeaderDiv>);
 }

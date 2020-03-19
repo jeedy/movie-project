@@ -1,10 +1,10 @@
 import React, { Component, useState, useEffect } from "react";
-import "./App.css";
-import Header from "./header/header";
-import MoveList from "./movie-list/movie-list";
+import "App.css";
+import Header from "header/header";
+import MoveList from "movie-list/movie-list";
 
 
-import { data } from "./data";
+import { data } from "data";
 
 function Home(props) {
 
