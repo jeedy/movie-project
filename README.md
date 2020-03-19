@@ -5,18 +5,25 @@
 $ npm start
 ```
 
-## build
+## build & Start http-server 
 ```sh
 $ npm run build
+
+# local에서 빌드된 파일을 http서버에 올려본다. (react route와 서버 route간에 차이를 이해하려면 띄워봐야한다.)
+$ cd build
+$ npx http-server -p 8080
 ```
+
+
 
 ## node server(express) start 운영시
 ```sh
 $ node server
 ```
 
+<hr>
 
-
+# React create-react-app Manual
 ## debugging
 1. "Debugger for Chrome" vscode plugin 설치
 
